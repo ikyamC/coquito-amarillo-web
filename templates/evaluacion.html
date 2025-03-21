@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación RRHH - Coquito Amarillo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Evaluación RRHH</h1>
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('nosotros') }}">Nosotros</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+            <a href="{{ url_for('evaluacion') }}">Evaluación RRHH</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Evalúa tu bienestar</h2>
+        <p>Responde las siguientes preguntas para conocer tu estado actual en la rueda de la vida.</p>
+        <form action="/evaluacion" method="POST">
+            <label for="empleado">Nombre:</label>
+            <input type="text" name="nombre" required>
+            <label for="satisfaccion">Correo</label>
+            <input type="email" name="correo" required>
+            <label type="number" for="comentario">puntaje</label>
+            <textarea name="puntaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Coquito Amarillo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sobre Nosotros</h1>
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('nosotros') }}">Nosotros</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+            <a href="{{ url_for('evaluacion') }}">Evaluación RRHH</a>
+        </nav>
+    </header>
+    <main>
+        <h2>¿Quiénes somos?</h2>
+        <p>Coquito Amarillo es una plataforma dedicada a mejorar el bienestar de nuestros empleados a través de evaluaciones personalizadas.</p>
+        <h3>Nuestra misión</h3>
+        <p>Fomentar el desarrollo profesional y personal de cada colaborador.</p>
+    </main>
+</body>
+</html>

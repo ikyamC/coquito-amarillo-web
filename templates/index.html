@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coquito Amarillo - Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Coquito Amarillo</h1>
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('nosotros') }}">Nosotros</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+            <a href="{{ url_for('evaluacion') }}">Evaluación RRHH</a>
+        </nav>
+    </header>
+    <main>
+        <p>Esta es la plataforma de evaluación de la rueda de la vida para nuestros empleados.</p>
+    </main>
+</body>
+</html>
